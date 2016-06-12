@@ -10,9 +10,9 @@ import java.util.Scanner;
 /**
  * 
  * @author Sneha Priya Ale
- * Problem
+ * Problem Statement
 
-Bleatrix Trotter the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number N. Then she starts naming N, 2 × N, 3 × N, and so on. Whenever she names a number, she thinks about all of the digits in that number. She keeps track of which digits (0, 1, 2, 3, 4, 5, 6, 7, 8, and 9) she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep.
+Bleatrix Trotter the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number N. Then she starts naming N, 2 Ã— N, 3 Ã— N, and so on. Whenever she names a number, she thinks about all of the digits in that number. She keeps track of which digits (0, 1, 2, 3, 4, 5, 6, 7, 8, and 9) she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep.
 
 Bleatrix must start with N and must always name (i + 1) * N directly after i * N. For example, suppose that Bleatrix picks N = 1692. She would count as follows:
 
@@ -53,7 +53,7 @@ public class BleatrixTrotter {
 	int[] records=null;
 	boolean b0=false,b1=false,b2=false,b3=false,b4=false,b5=false,b6=false,b7=false,b8=false,b9=false;
 	
-	
+	//Constructor
 	BleatrixTrotter(){
 		scan = new Scanner(System.in);
 		file= new File("C://Users//aelay//workspace//GooGleIO//src//Bleatrix//Output.txt"); //Information About the Output File
@@ -202,7 +202,7 @@ public class BleatrixTrotter {
         return count;
     }
 	
-	
+	//main class
 	public static void main(String args[]){
 		new BleatrixTrotter();
 	}
